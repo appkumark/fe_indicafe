@@ -1,0 +1,5 @@
+### get goole home page
+
+GET https://www.google.com
+Accpet: application/text
+Content-Type: application/json
