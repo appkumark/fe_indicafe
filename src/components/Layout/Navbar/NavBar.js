@@ -6,9 +6,9 @@ import logo from '../../../assets/images/dosa.jpg'
 
 const NavBar = () => {
   const renderNavbar = () => (
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="/">
+    <nav className="navbar navbar-expand-lg">
+      <div className="container">
+        <a className="navbar-brand" href="/">
           <img src={logo} alt="Logo..." className="logo" />
           <label
             style={{
@@ -16,47 +16,48 @@ const NavBar = () => {
               fontWeight: 'bold',
             }}
           >
-            ind<span className='logo-label'>iC</span>af&egrave;
+            ind<span className="logo-label">iC</span>af&egrave;
           </label>
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style={{ background: 'var(--primary-green)' , color: "var(--primary-white)"}}
         >
           <FontAwesomeIcon icon={faBars} />
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="/">
                 Browse
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">
+            <li className="nav-item">
+              <a className="nav-link" href="/">
                 Sign In
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">
+            <li className="nav-item">
+              <a className="nav-link" href="/">
                 Register
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">
+            <li className="nav-item">
+              <a className="nav-link" href="/">
                 Cart
               </a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form className="d-flex" role="search">
             <div className="input-group">
               <input
-                class="form-control"
+                className="form-control"
                 type="text"
                 placeholder="Search ..."
                 aria-label="Search"
@@ -64,7 +65,7 @@ const NavBar = () => {
               />
               <div className="input-group-append">
                 <button
-                  class="btn btn-outline-success"
+                  className="btn btn-outline-success"
                   type="submit"
                   style={{
                     background: 'var(--primary-green)',
